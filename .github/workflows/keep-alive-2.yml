@@ -27,12 +27,12 @@ jobs:
 
       - name: 运行自动登录
         env:
-          GH_USERNAME: ${{ secrets.GH_USERNAME }}
-          GH_PASSWORD: ${{ secrets.GH_PASSWORD }}
-          GH_SESSION: ${{ secrets.GH_SESSION }}
+          GH_USERNAME: ${{ secrets.GH_USERNAME2 }}
+          GH_PASSWORD: ${{ secrets.GH_PASSWORD2 }}
+          GH_SESSION: ${{ secrets.GH_SESSION2 }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-          REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+          REPO_TOKEN: ${{ secrets.REPO_TOKEN2 }}
           
         run: python scripts/auto_login.py
         
